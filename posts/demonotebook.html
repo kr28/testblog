@@ -3,21 +3,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <meta charset="utf-8">
-    <meta name="description" content="This is a test site for CE's blog.">
+    <meta name="description" content="">
     <meta name="author" content="Chris Elbers">
-    <title>Loose remarks | Loose remarks</title>
+    <title>DemoNotebook | Loose remarks</title>
     
     
         
-            <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-            <link href="assets/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
+            <link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+            <link href="../assets/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
         
-        <link href="assets/css/rst.css" rel="stylesheet" type="text/css">
-        <link href="assets/css/code.css" rel="stylesheet" type="text/css">
-        <link href="assets/css/colorbox.css" rel="stylesheet" type="text/css">
-        <link href="assets/css/theme.css" rel="stylesheet" type="text/css">
-        <link href="assets/css/ipython.min.css" rel="stylesheet" type="text/css">
-        <link href="assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/rst.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/code.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/colorbox.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/theme.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
         
     
     <!--[if lt IE 9]>
@@ -26,16 +26,20 @@
     
         
             
-                <link rel="alternate" type="application/rss+xml" title="RSS (en)" href="rss.xml">
+                <link rel="alternate" type="application/rss+xml" title="RSS (en)" href="../rss.xml">
             
-                <link rel="alternate" type="application/rss+xml" title="RSS (nl)" href="./nl/rss.xml">
+                <link rel="alternate" type="application/rss+xml" title="RSS (nl)" href=".././nl/rss.xml">
             
         
     
     
 
     
+
     
+
+
+
     
 </head>
 <body>
@@ -52,7 +56,7 @@
             <span class="icon-bar"></span>
         </a>
 
-            <a class="brand" href=".">
+            <a class="brand" href="../">
             Loose remarks
             </a>
             <!-- Everything you want hidden at 940px or less, place within here -->
@@ -62,19 +66,19 @@
     
         
             
-                <li><a href="archive.html">Archives</a>
+                <li><a href="../archive.html">Archives</a>
             
         
     
         
             
-                </li><li><a href="categories/index.html">Tags</a>
+                </li><li><a href="../categories/index.html">Tags</a>
             
         
     
         
             
-                </li><li><a href="rss.xml">RSS</a>
+                </li><li><a href="../rss.xml">RSS</a>
             
         
     
@@ -89,7 +93,7 @@
         
     
         
-            <a href="./nl/index.html">Nederlands</a>
+            <a href=".././nl/index.html">Nederlands</a>
         
     
 </li>
@@ -97,6 +101,10 @@
                 
                 
                     <li>
+		
+			<a href="demonotebook.ipynb" id="sourcelink">Source</a>
+		
+		</li>
                 
                 </ul>
             </div>
@@ -110,14 +118,35 @@
     <div class="span2"></div>
     <div class="span8">
     
+    <div class="postbox">
     
-        <div class="postbox">
-        <h1><a href="posts/demonotebook.html">DemoNotebook</a></h1>
-        <p style="text-align:right"><big>
-             Posted: <time class="published" datetime="2013-09-15T00:43:14">2013-09-15 00:43</time>
-        </big></p>
-        <hr>
-        <div class="text_cell_render border-box-sizing rendered_html">
+    <h1>DemoNotebook</h1>
+    
+
+    <hr>
+    <small>
+        Posted: <time class="published" datetime="2013-09-15T00:43:14">2013-09-15 00:43</time>
+        
+    
+        
+            
+        
+            
+        
+    
+
+		
+    
+
+          |  
+		
+		
+			<a href="demonotebook.ipynb" id="sourcelink">Source</a>
+		
+		
+    </small>
+    <hr>
+    <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Update:</strong> made full github repo for blog-as-notebooks, and updated instructions on how to more easily configure everything and use the newest nbconvert for a more streamlined workflow.</p>
 <p>Since the notebook was introduced with <a href="http://ipython.org/ipython-doc/rel-0.12.1/whatsnew/version0.12.html">IPython 0.12</a>, it has proved to be very popular, and we are seeing great adoption of the tool and the underlying file format in research and education. One persistent question we've had since the beginning (even prior to its official release) was whether it would be possible to easily write blog posts using the notebook. The combination of easy editing in markdown with the notebook's ability to contain code, figures and results, makes it an ideal platform for quick authoring of technical documents, so being able to post to a blog is a natural request.</p>
 <p>Today, in answering a query about this from a colleague, I decided to try again the status of our conversion pipeline, and I'm happy to report that with a bit of elbow-grease, at least on Blogger things work pretty well!</p>
@@ -125,7 +154,7 @@
 <p>The purpose of this post is to quickly provide a set of instructions on how I got it to work, and to test things out. Please note: this requires code that isn't quite ready for prime-time and is still under heavy development, so expect some assembly.</p>
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Converting-your-notebook-to-html-with-nbconvert">Converting your notebook to html with nbconvert<a class="anchor-link" href="posts/demonotebook.html#Converting-your-notebook-to-html-with-nbconvert">¶</a></h2>
+<h2 id="Converting-your-notebook-to-html-with-nbconvert">Converting your notebook to html with nbconvert<a class="anchor-link" href="demonotebook.html#Converting-your-notebook-to-html-with-nbconvert">¶</a></h2>
 </div>
 
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -147,7 +176,7 @@
 120907-Blogging with the IPython Notebook.ipynb</code></pre>
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Configuring-your-Blogger-blog-to-accept-notebooks">Configuring your Blogger blog to accept notebooks<a class="anchor-link" href="posts/demonotebook.html#Configuring-your-Blogger-blog-to-accept-notebooks">¶</a></h2>
+<h2 id="Configuring-your-Blogger-blog-to-accept-notebooks">Configuring your Blogger blog to accept notebooks<a class="anchor-link" href="demonotebook.html#Configuring-your-Blogger-blog-to-accept-notebooks">¶</a></h2>
 </div>
 
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -166,7 +195,7 @@
 <p><em>Note:</em> if you change blog templates, Blogger does destroy your custom CSS, so you may need to repeat the above steps in that case.</p>
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Adding-the-actual-posts">Adding the actual posts<a class="anchor-link" href="posts/demonotebook.html#Adding-the-actual-posts">¶</a></h2>
+<h2 id="Adding-the-actual-posts">Adding the actual posts<a class="anchor-link" href="demonotebook.html#Adding-the-actual-posts">¶</a></h2>
 </div>
 
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -174,7 +203,7 @@
 <p>That's it!</p>
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="What-can-you-put-in?">What can you put in?<a class="anchor-link" href="posts/demonotebook.html#What-can-you-put-in?">¶</a></h2>
+<h2 id="What-can-you-put-in?">What can you put in?<a class="anchor-link" href="demonotebook.html#What-can-you-put-in?">¶</a></h2>
 </div>
 
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -402,7 +431,7 @@ $$- 4 \frac{x \operatorname{sin}\left(x^{2}\right) \operatorname{cos}\left(x^{2}
 <p>For more examples of how to use sympy in the notebook, you can see <a href="http://nbviewer.ipython.org/urls/raw.github.com/ipython/ipython/master/docs/examples/notebooks/sympy.ipynb">our example sympy notebook</a> or go to the <a href="http://sympy.org">sympy website</a> for much more documentation.</p>
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="You-can-easily-include-formatted-text-and-code-with-markdown">You can easily include formatted text and code with markdown<a class="anchor-link" href="posts/demonotebook.html#You-can-easily-include-formatted-text-and-code-with-markdown">¶</a></h2>
+<h2 id="You-can-easily-include-formatted-text-and-code-with-markdown">You can easily include formatted text and code with markdown<a class="anchor-link" href="demonotebook.html#You-can-easily-include-formatted-text-and-code-with-markdown">¶</a></h2>
 </div>
 
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -493,7 +522,7 @@ In [9]:
 
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Including-code-examples-from-other-languages">Including code examples from other languages<a class="anchor-link" href="posts/demonotebook.html#Including-code-examples-from-other-languages">¶</a></h2>
+<h2 id="Including-code-examples-from-other-languages">Including code examples from other languages<a class="anchor-link" href="demonotebook.html#Including-code-examples-from-other-languages">¶</a></h2>
 </div>
 
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -789,351 +818,55 @@ sin(1)= 0.841470984808
 
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Keep-in-mind,-this-is-still-experimental-code!">Keep in mind, this is still experimental code!<a class="anchor-link" href="posts/demonotebook.html#Keep-in-mind,-this-is-still-experimental-code!">¶</a></h2>
+<h2 id="Keep-in-mind,-this-is-still-experimental-code!">Keep in mind, this is still experimental code!<a class="anchor-link" href="demonotebook.html#Keep-in-mind,-this-is-still-experimental-code!">¶</a></h2>
 </div>
 
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Hopefully this post shows that the system is already useful to communicate technical content in blog form with a minimal amount of effort. But please note that we're still in heavy development of many of these features, so things are susceptible to changing in the near future. By all means join the <a href="http://mail.scipy.org/mailman/listinfo/ipython-dev">IPython dev mailing list</a> if you'd like to participate and help us make IPython a better tool!</p>
 </div>
-        
-            
     
-        
-    <p>
+    <ul class="pager">
     
-        <a href="posts/demonotebook.html#disqus_thread" data-disqus-identifier="cache/posts/DemoNotebook.html">Comments</a>
-    
-
-    
-
-        
-        </p></div>
-    
-        <div class="postbox">
-        <h1><a href="posts/test-post-nr-2.html">Test post nr 2</a></h1>
-        <p style="text-align:right"><big>
-             Posted: <time class="published" datetime="2013-09-14T18:38:50">2013-09-14 18:38</time>
-        </big></p>
-        <hr>
-        <div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
-<div class="prompt input_prompt">
-In [3]:
-</div>
-<div class="input_area box-flex1">
-<div class="highlight"><pre><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">YouTubeVideo</span>
-<span class="n">YouTubeVideo</span><span class="p">(</span><span class="s">'R3N8qOF8kEY'</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-
-<div class="vbox output_wrapper">
-<div class="output vbox">
-
-
-<div class="hbox output_area"><div class="prompt output_prompt">
-    Out[3]:</div>
-<div class="box-flex1 output_subarea output_pyout">
-
-<div class="output_html rendered_html">
-
-        <iframe width="400" height='300"' src="http://www.youtube.com/embed/R3N8qOF8kEY" frameborder="0" allowfullscreen></iframe>
-        
-</div>
-
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
-<div class="prompt input_prompt">
-In [4]:
-</div>
-<div class="input_area box-flex1">
-<div class="highlight"><pre><span class="n">pwd</span>
-</pre></div>
-
-</div>
-</div>
-
-<div class="vbox output_wrapper">
-<div class="output vbox">
-
-
-<div class="hbox output_area"><div class="prompt output_prompt">
-    Out[4]:</div>
-<div class="box-flex1 output_subarea output_pyout">
-
-
-<pre>
-u'/Users/Chris/Documents/mypy/examples/CEblog'
-</pre>
-
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
-<div class="prompt input_prompt">
-In [5]:
-</div>
-<div class="input_area box-flex1">
-<div class="highlight"><pre><span class="n">pylab</span> <span class="n">inline</span>
-</pre></div>
-
-</div>
-</div>
-
-<div class="vbox output_wrapper">
-<div class="output vbox">
-
-
-<div class="hbox output_area"><div class="prompt"></div>
-<div class="box-flex1 output_subarea output_stream output_stdout">
-<pre>
-Populating the interactive namespace from numpy and matplotlib
-
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
-<div class="prompt input_prompt">
-In [13]:
-</div>
-<div class="input_area box-flex1">
-<div class="highlight"><pre><span class="o">%%</span><span class="k">latex</span>
-\<span class="p">[</span>
-  <span class="n">e</span><span class="o">^</span><span class="p">{</span><span class="n">i</span>\<span class="n">pi</span><span class="p">}</span><span class="o">=-</span><span class="mi">1</span>
-\<span class="p">]</span>
-</pre></div>
-
-</div>
-</div>
-
-<div class="vbox output_wrapper">
-<div class="output vbox">
-
-
-<div class="hbox output_area"><div class="prompt"></div>
-<div class="box-flex1 output_subarea output_display_data">
-
-
-\[
-  e^{i\pi}=-1
-\]
-
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Zou dit werken? <span class="math">\(E=mc^2\)</span></p>
-</div>
-<div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
-<div class="prompt input_prompt">
-In [17]:
-</div>
-<div class="input_area box-flex1">
-<div class="highlight"><pre><span class="o">%%</span><span class="k">latex</span>
-\<span class="p">[</span>
-  <span class="n">sin</span><span class="p">(</span><span class="mi">2</span><span class="n">x</span><span class="p">)</span><span class="o">=</span><span class="mi">2</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="n">cos</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-  \<span class="p">]</span>
-</pre></div>
-
-</div>
-</div>
-
-<div class="vbox output_wrapper">
-<div class="output vbox">
-
-
-<div class="hbox output_area"><div class="prompt"></div>
-<div class="box-flex1 output_subarea output_display_data">
-
-
-\[
-  sin(2x)=2sin(x)cos(x)
-  \]
-
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
-<div class="prompt input_prompt">
-In []:
-</div>
-<div class="input_area box-flex1">
-<div class="highlight"><pre>
-</pre></div>
-
-</div>
-</div>
-
-</div>
-        
-            
-    
-        
-    <p>
-    
-        <a href="posts/test-post-nr-2.html#disqus_thread" data-disqus-identifier="cache/posts/test-post-nr-2.html">Comments</a>
-    
-
-    
-
-        
-        </p></div>
-    
-        <div class="postbox">
-        <h1><a href="posts/first-post-to-see-the-light.html">First post to see the light</a></h1>
-        <p style="text-align:right"><big>
-             Posted: <time class="published" datetime="2013-09-14T01:07:04">2013-09-14 01:07</time>
-        </big></p>
-        <hr>
-        <div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
-<div class="prompt input_prompt">
-In [1]:
-</div>
-<div class="input_area box-flex1">
-<div class="highlight"><pre><span class="n">pwd</span>
-</pre></div>
-
-</div>
-</div>
-
-<div class="vbox output_wrapper">
-<div class="output vbox">
-
-
-<div class="hbox output_area"><div class="prompt output_prompt">
-    Out[1]:</div>
-<div class="box-flex1 output_subarea output_pyout">
-
-
-<pre>
-u'/Users/Chris/Documents/mypy/examples/ipysite'
-</pre>
-
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>tekstje om te proberen</p>
-</div>
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="headline-text">headline text<a class="anchor-link" href="posts/first-post-to-see-the-light.html#headline-text">¶</a></h1>
-</div>
-
-<div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
-<div class="prompt input_prompt">
-In [2]:
-</div>
-<div class="input_area box-flex1">
-<div class="highlight"><pre><span class="mi">3</span> <span class="o">*</span> <span class="mi">5</span>
-</pre></div>
-
-</div>
-</div>
-
-<div class="vbox output_wrapper">
-<div class="output vbox">
-
-
-<div class="hbox output_area"><div class="prompt output_prompt">
-    Out[2]:</div>
-<div class="box-flex1 output_subarea output_pyout">
-
-
-<pre>
-15
-</pre>
-
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
-<div class="prompt input_prompt">
-In []:
-</div>
-<div class="input_area box-flex1">
-<div class="highlight"><pre>
-</pre></div>
-
-</div>
-</div>
-
-</div>
-        
-            
-    
-        
-    <p>
-    
-        <a href="posts/first-post-to-see-the-light.html#disqus_thread" data-disqus-identifier="cache/posts/first-post-to-see-the-light.html">Comments</a>
-    
-
-    
-
-        
-        </p></div>
+        <li class="previous">
+            <a href="test-post-nr-2.html">← Previous post</a>
+        </li>
     
     
-<div>
-<ul class="pager">
-  
-  
-</ul>
-</div>
+    </ul>
 
-    
     
         
     
-       <script type="text/javascript">var disqus_shortname="xrssite";(function(){var a=document.createElement("script");a.async=true;a.type="text/javascript";a.src="http://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("HEAD")[0]||document.getElementsByTagName("BODY")[0]).appendChild(a)}());</script>
+        
+    
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+        var disqus_shortname ="xrssite";
+        
+            var disqus_url="http://ctmeweb2.s3.amazonaws.com/CEblog//posts/demonotebook.html";
+        
+        var disqus_title="DemoNotebook";
+        var disqus_identifier="cache/posts/DemoNotebook.html";
+        var disqus_config = function () {
+            this.language = "";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">Comments powered by <span class="logo-disqus">Disqus</span></a>
     
 
     
 
     
     
-        <script src="assets/js/mathjax.js" type="text/javascript"></script>
     
 
+    </div>
 
     </div>
     </div>
@@ -1145,11 +878,11 @@ In []:
 
     
         
-            <script src="assets/js/jquery-1.10.2.min.js" type="text/javascript"></script>
-            <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+            <script src="../assets/js/jquery-1.10.2.min.js" type="text/javascript"></script>
+            <script src="../assets/js/bootstrap.min.js" type="text/javascript"></script>
         
-        <script src="assets/js/jquery.colorbox-min.js" type="text/javascript"></script>
-        <script src="assets/js/mathjax-onload.js" type="text/javascript"></script>
+        <script src="../assets/js/jquery.colorbox-min.js" type="text/javascript"></script>
+        <script src="../assets/js/mathjax-onload.js" type="text/javascript"></script>
     
 
 
