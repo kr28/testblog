@@ -1,0 +1,181 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="Kimberley Wallaart and Chris Elbers">
+    <title>Blogging with Nikola | Sikiliza - The Listening Device</title>
+    
+    
+        
+            <link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+            <link href="../assets/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
+        
+        <link href="../assets/css/rst.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/code.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/colorbox.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/theme.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+        
+    
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]-->
+    
+        
+            <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
+        
+    
+    
+
+    
+
+    
+
+
+    
+</head>
+<body>
+
+<!-- Menubar -->
+<div class="navbar navbar-fixed-top" id="navbar">
+    <div class="navbar-inner">
+        <div class="container">
+
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </a>
+
+            <a class="brand" href="../">
+            Sikiliza - The Listening Device
+            </a>
+            <!-- Everything you want hidden at 940px or less, place within here -->
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    
+    
+        
+            
+                <li><a href="../archive.html">Archives</a>
+            
+        
+    
+        
+            
+                </li><li><a href="../categories/index.html">Tags</a>
+            
+        
+    
+        
+            
+                </li><li><a href="../rss.xml">RSS</a>
+            
+        
+    
+
+                </li></ul>
+                
+                <ul class="nav pull-right">
+                
+                
+                
+                
+                    <li>
+		
+			<a href="blogging-with-nikola.ipynb" id="sourcelink">Source</a>
+		
+		</li>
+                
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of Menubar -->
+<div class="container-fluid" id="container-fluid">
+    <!--Body content-->
+    <div class="row-fluid">
+    <div class="span2"></div>
+    <div class="span8">
+    
+
+    <h1>Blogging with Nikola</h1>
+
+    <div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="how-to-publish-a-blog-with-nikola-and-github">How to publish a blog with Nikola and GitHub</h1>
+<h2 id="on-the-local-computer">On the local computer</h2>
+<ul>
+<li>Create the blog in a ipynb IPython notebook</li>
+<li>If you already have a site, in terminal go to the site's folder and create a new post
+<ul>
+<li>nikola new_post -f ipynb -t TITLE</li>
+</ul></li>
+<li>Else, create a site first using
+<ul>
+<li>nikola init site_name</li>
+</ul></li>
+<li>Replace the post thus created (in folder 'posts') by the IPython notebook created in step 1</li>
+<li>Run the command
+<ul>
+<li>nikola build</li>
+</ul></li>
+<li>Go to the output folder and check the html version of the new post</li>
+<li>If necessary edit the html version in emacs (e.g., taking out the In: / Out: cells)</li>
+</ul>
+<h2 id="publish-on-github">Publish on GitHub</h2>
+<ul>
+<li>Copy the contents of the output folder to a repo on GitHub</li>
+<li>The site is available through your_git_username.github.com/repo.name</li>
+</ul>
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In []:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre>
+</pre></div>
+
+</div>
+</div>
+
+</div>
+
+
+    </div>
+    </div>
+    <!--End of body content-->
+</div>
+<div class="footerbox">
+    Contents © 2014         <a href="mailto:chris.elbers@gmail.com">Kimberley Wallaart and Chris Elbers</a> - Powered by         <a href="http://getnikola.com">Nikola</a>         
+</div>
+
+    
+        
+            <script src="../assets/js/jquery-1.10.2.min.js" type="text/javascript"></script>
+            <script src="../assets/js/bootstrap.min.js" type="text/javascript"></script>
+        
+        <script src="../assets/js/jquery.colorbox-min.js" type="text/javascript"></script>
+        <script src="../assets/js/mathjax-onload.js" type="text/javascript"></script>
+    
+
+
+	
+
+    <script type="text/javascript">jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});
+    $(window).on('hashchange', function(){
+        if (location.hash) {
+            $('body').animate({scrollTop: $(location.hash).offset().top - $('#navbar').outerHeight(true)*1.2 }, 1);
+        }
+    });
+    $(document).ready(function(){$(window).trigger('hashchange')});
+    </script>
+   
+   
+</body></html>
